@@ -1,15 +1,15 @@
 import React from 'react';
 import './Navigation.scss';
 import { Navbar, Nav, ButtonGroup, Button, Container, NavDropdown } from 'react-bootstrap';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.svg';
 
 const Navigation = () => (
-    <Navbar variant="light" expand="lg">
+    <Navbar bg="light" expand="lg">
         <Container>
             <Navbar.Brand href="#home">
                 <img
                 src= {logo}
-                height="30"
+                height="40"
                 className="d-inline-block align-top"
                 alt="Steady logo"
                 />

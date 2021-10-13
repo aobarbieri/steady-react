@@ -1,12 +1,11 @@
 
 .navbar {
-
     background-color: #fff;
     color: #383838;
     border-bottom:  0.2rem solid #23da60;
 
     a.dropdown-toggle.nav-link {
-        color: #383838;
+        color: rgba(0, 0, 0, 0.55);
     }
     a.dropdown-toggle.nav-link:hover {
         color: #fff;
