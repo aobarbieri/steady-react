@@ -1,8 +1,9 @@
+@import '../variables';
 
 .navbar {
     background-color: #fff;
     color: #383838;
-    border-bottom:  0.2rem solid #23da60;
+    border-bottom:  0.2rem solid $color-primary;
 
     a.dropdown-toggle.nav-link {
         color: rgba(0, 0, 0, 0.55);

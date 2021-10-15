@@ -6,13 +6,13 @@ import './Hero.scss';
 const Hero = () => (
   <Container fluid className="hero text-center text-white">
     <Row>
-      <Col className="text-md-end my-md-5 mt-5">
-        <Image src={logo} />
+      <Col xs={12} md={6} className="text-md-end hero__steady-pay--logo mt-5">
+        <Image className='steady-pay--logo' src={logo} />
       </Col>
-      <Col className="text-md-start my-md-5 my-3">
-        <p className="text-space">Pay your bills using our App</p>
-        <Button className="text-space" variant="outline-light">
-          Open your account
+      <Col xs={12} md={6} className="text-md-start hero__content">
+        <p className="text-space">Pay your bills on the go</p>
+        <Button className="text-space col-6 button" variant="success">
+          Open an account
         </Button>
       </Col>
     </Row>

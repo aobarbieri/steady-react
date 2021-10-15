@@ -3,7 +3,9 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import CreditCard from './components/CreditCard';
 import CardList from './components/CardList';
+import CenteredButton from './components/CenteredButton';
 
+import posts from './data/posts';
 import './App.scss';
 
 const App = () => (
@@ -11,8 +13,8 @@ const App = () => (
       <Navigation />
       <Hero />
       <CreditCard />
-
-      <CardList />
+      <CardList posts={posts} />
+      <CenteredButton>Open your account</CenteredButton>
     </div>
 );
 

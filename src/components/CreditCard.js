@@ -11,11 +11,12 @@ import {
 import creditCard from '../assets/credit-card.jpg';
 
 const CreditCard = () => (
-  <Container fluid className="my-5">
+  <Container className="my-5">
     <Row>
-      <Col xs={12} md={7} className="mb-5 mb-lg-0 px-5">
-        <h2 className="display-4 my-5">Credit Card</h2>
-
+      <Col xs={12} md={7} className="mb-5 mb-lg-0 px-5 px-md-0">
+        <Row>
+          <h2 className="mb-5 credit-card-title">Credit Card</h2>
+        </Row>
         <Row>
           <Col xs={12} md={6} className="mb-4">
             <Row>
@@ -27,7 +28,6 @@ const CreditCard = () => (
               </Col>
             </Row>
           </Col>
-
           <Col xs={12} md={6} className="mb-4">
             <Row>
               <Col xs={2} className='d-flex justify-content-center'>
@@ -38,7 +38,6 @@ const CreditCard = () => (
               </Col>
             </Row>
           </Col>
-
           <Col xs={12} md={6} className="mb-4">
             <Row>
               <Col xs={2} className='d-flex justify-content-center'>
@@ -49,7 +48,6 @@ const CreditCard = () => (
               </Col>
             </Row>
           </Col>
-
           <Col xs={12} md={6} className="mb-4">
             <Row>
               <Col xs={2} className='d-flex justify-content-center'>
@@ -60,7 +58,6 @@ const CreditCard = () => (
               </Col>
             </Row>
           </Col>
-
         </Row>
       </Col>
       <Col xs={12} md={5}>
