@@ -16,7 +16,7 @@ const App = () => (
 
       <CreditCard />
       <CardList posts={posts} />
-      <CenteredButton>Open your account</CenteredButton>
+      <CenteredButton>Open an account</CenteredButton>
 
       <Institutional />
     </div>

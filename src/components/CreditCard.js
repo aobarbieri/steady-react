@@ -25,9 +25,9 @@ const CreditCard = () => (
 					<Col xs={12} md={6} className="mb-4">
 						<IconText
 							icon={faCreditCard}
-							size="2x"
+							size="2"
 							color="#05DF90"
-							className="h5 text-muted"
+							textClassName="h5 text-muted"
 						>
 							Personal Credit
 						</IconText>
@@ -36,9 +36,9 @@ const CreditCard = () => (
 					<Col xs={12} md={6} className="mb-4">
 						<IconText
 							icon={faCartShopping}
-							size="2x"
+							size="2"
 							color="#05DF90"
-							className="h5 text-muted"
+							textClassName="h5 text-muted"
 						>
 							Online Shopping
 						</IconText>
@@ -47,9 +47,9 @@ const CreditCard = () => (
 					<Col xs={12} md={6} className="mb-4">
 						<IconText
 							icon={faMobileButton}
-							size="2x"
+							size="2"
 							color="#05DF90"
-							className="h5 text-muted"
+							textClassName="h5 text-muted"
 						>
 							Mobile App
 						</IconText>
@@ -58,9 +58,9 @@ const CreditCard = () => (
 					<Col xs={12} md={6} className="mb-4">
 						<IconText
 							icon={faWallet}
-							size="2x"
+							size="2"
 							color="#05DF90"
-							className="h5 text-muted"
+							textClassName="h5 text-muted"
 						>
 							Digital Wallet
 						</IconText>

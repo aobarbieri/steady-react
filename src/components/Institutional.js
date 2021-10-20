@@ -28,7 +28,8 @@ const Institutional = () => (
             Labore minim cupidatat occaecat aliqua et dolore amet laboris
             deserunt consectetur et.
           </p>
-          <Col>
+          
+          <Col className='px-2'>
             <IconText icon={faMobileScreenButton} color="#fff" className='mb-2'>
               No line and no bureaucracy
             </IconText>
