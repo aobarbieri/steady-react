@@ -18,7 +18,7 @@ const CreditCard = () => (
 		<Row>
 			<Col xs={12} md={7} className="mb-5 mb-lg-0 px-5 px-md-0">
 				<Row>
-					<h2 className="mb-5 credit-card-title">Credit Card</h2>
+					<h2 className="mb-5 text-muted credit-card-title">Credit Card</h2>
 				</Row>
 
 				<Row>

@@ -11,7 +11,7 @@ const Hero = () => (
       </Col>
       <Col xs={12} md={6} className="text-md-start hero__content">
         <p className="text-space">Pay your bills on the go</p>
-        <Button className="text-space col-6 button" variant="success">
+        <Button className="text-space text-nowrap" variant="outline-light">
           Open an account
         </Button>
       </Col>

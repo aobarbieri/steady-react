@@ -17,8 +17,8 @@ const Institutional = () => (
       <Row>
         <Col xs={12} md={5} />
         <Col xs={12} md={7}>
-          <h2>We were born digital</h2>
-          <p>
+          <h2 className='institutional__title my-5'>We were born digital</h2>
+          <p className='mb-5'>
             Minim ad est proident in quis cillum cupidatat dolor. Labore minim
             cupidatat occaecat aliqua et dolore amet laboris deserunt
             consectetur et. Anim irure ad et incididunt anim cupidatat aliqua
@@ -29,20 +29,20 @@ const Institutional = () => (
             deserunt consectetur et.
           </p>
           <Col>
-            <IconText icon={faMobileScreenButton} color="#fff">
+            <IconText icon={faMobileScreenButton} color="#fff" className='mb-2'>
               No line and no bureaucracy
             </IconText>
-            <IconText icon={faMobileButton} color="#fff">
+            <IconText icon={faMobileButton} color="#fff" className='mb-2'>
               Practical and simple
             </IconText>
-            <IconText icon={faGlobe} color="#fff">
+            <IconText icon={faGlobe} color="#fff" className='mb-2'>
               Open an account 100% online
             </IconText>
-            <IconText icon={faShieldVirus} color="#fff">
+            <IconText icon={faShieldVirus} color="#fff" className='mb-2'>
               Safe online transactions
             </IconText>
           </Col>
-          <Button variant="outline-light">Open an account</Button>
+          <Button variant="outline-light" className='mt-5'>Open an account</Button>
         </Col>
       </Row>
     </Container>
