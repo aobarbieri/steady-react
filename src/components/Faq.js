@@ -16,9 +16,12 @@ import {
 
 import './Faq.scss';
 
-const Faq = () => (
+const Faq = () => {
+
+return (
 	<section className="faq text-light">
 		<Container className="py-5">
+			<h2 className='my-5 faq__title text-center'>FAQs</h2>
 			<Row className="d-flex align-items-center">
 				<Col className="d-lg-none mb-5" xs={12}>
 					<Row>
@@ -149,6 +152,7 @@ const Faq = () => (
 			</Row>
 		</Container>
 	</section>
-);
+)
+};
 
 export default Faq;
