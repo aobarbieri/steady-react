@@ -16,7 +16,8 @@ import '../_variables.scss';
 const CreditCard = () => (
 	<Container className="my-5 ">
 		<Row>
-			<Col xs={12} md={7} className="mb-5 mb-lg-0 px-5 px-md-0 ">
+			<Col md={1}></Col>
+			<Col xs={12} md={6} className="mb-5 mb-lg-0 px-5 px-md-0 ">
 				<Row>
 					<h2 className="mb-5 text-muted credit-card-title">Credit Card</h2>
 				</Row>
@@ -67,9 +68,10 @@ const CreditCard = () => (
 					</Col>
 				</Row>
 			</Col>
-			<Col xs={12} md={5}>
+			<Col xs={12} md={4}>
 				<Image src={creditCard} alt="Credit Card Example" fluid />
 			</Col>
+			<Col md={1}></Col>
 		</Row>
 	</Container>
 );
