@@ -11,6 +11,10 @@
         .accordion-button {
             color: #fff;
             background: unset;
+        
+            &::after {
+                display: none;
+            }
         }
     }
     
@@ -22,7 +26,10 @@
         @media screen and (min-width: 992px) {
             font-size: 3.2rem;
         }
+    }
 
+    &-clickable {
+        cursor: pointer;
     }
 }
 

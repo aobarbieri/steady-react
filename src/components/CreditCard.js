@@ -14,9 +14,9 @@ import './CreditCard.scss';
 import '../_variables.scss';
 
 const CreditCard = () => (
-	<Container className="my-5">
+	<Container className="my-5 ">
 		<Row>
-			<Col xs={12} md={7} className="mb-5 mb-lg-0 px-5 px-md-0">
+			<Col xs={12} md={7} className="mb-5 mb-lg-0 px-5 px-md-0 ">
 				<Row>
 					<h2 className="mb-5 text-muted credit-card-title">Credit Card</h2>
 				</Row>
