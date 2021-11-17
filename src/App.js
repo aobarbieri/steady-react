@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import CreditCard from './components/CreditCard';
@@ -7,24 +7,34 @@ import CenteredButton from './components/CenteredButton';
 import Institutional from './components/Institutional';
 import Faq from './components/Faq';
 import Footer from './components/Footer';
+import AccountModal from './components/AccountModal';
 
 import posts from './data/posts';
 import './App.scss';
 
-const App = () => (
-    <div className="App">
-      <Navigation />
-      <Hero />
+const App = () => {
+	const [show, setShow] = useState(false);
 
-      <CreditCard />
-      <CardList posts={posts} />
-      <CenteredButton>Open an account</CenteredButton>
+	return (
+		<div className='App'>
+			<Navigation handleShow={() => setShow(true)} />
+			<Hero />
 
-      <Institutional />
-      <Faq />
-      <Footer />
-    </div>
-);
+			<CreditCard />
+			<CardList posts={posts} />
+			<CenteredButton handleShow={() => setShow(true)} >
+				Open an account
+			</CenteredButton>
 
+			<Institutional />
+			<Faq />
+			<Footer />
+			<AccountModal
+				show={show}
+				handleClose={() => setShow(false)}
+			/>
+		</div>
+	);
+};
 
 export default App;

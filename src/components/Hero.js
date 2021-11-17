@@ -4,7 +4,7 @@ import logo from '../assets/logo__steady-pay.svg';
 import './Hero.scss';
 
 const Hero = () => (
-  <Container fluid className="hero text-center text-white">
+  <Container className="hero text-center text-white" fluid>
     <Row>
       <Col xs={12} md={6} className="text-md-end hero__steady-pay--logo mt-5">
         <Image className='steady-pay--logo' src={logo} />
