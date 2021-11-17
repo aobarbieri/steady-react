@@ -1,43 +1,39 @@
 div.hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/hero.jpg');
-    background-size: cover;
-    background-position: center;
-}
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+		url('../assets/hero.jpg');
+	background-size: cover;
+	background-position: center;
 
-.hero__steady-pay--logo {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    
-    .steady-pay--logo {
-        height: 12.5rem;
-        width: 20.1rem;
-    
-        @media screen and (min-width: 992px) {
-            height: 18.5rem;
-            width: 29.1rem;
+    &__steady-pay--logo {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        .steady-pay--logo {
+            height: 12.5rem;
+            width: 20.1rem;
+
+            @media screen and (min-width: 992px) {
+                height: 18.5rem;
+                width: 29.1rem;
+            }
         }
     }
-}
+	&__content {
+		margin-top: 0;
 
-.hero__content {
-   margin-top: 0 !important;
+		@media screen and (min-width: 768px) {
+			margin-top: 6.8rem;
+			padding-left: 3rem;
+		}
 
-    @media screen and (min-width: 768px) {
-        margin-top: 6.8rem !important;
-        padding-left: 3rem !important;
-    }
+		.text-space {
+			margin-bottom: 2rem;
+			font-weight: 300;
 
-    .text-space {
-        margin-bottom: 2rem;
-        font-weight: 300;
-
-        @media screen and (min-width: 768px) {
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-    }
-
-    .button {
-
-    }
+			@media screen and (min-width: 768px) {
+				margin-bottom: 1rem;
+				font-size: 1.2rem;
+			}
+		}
+	}
 }

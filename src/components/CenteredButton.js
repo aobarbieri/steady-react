@@ -1,9 +1,9 @@
 import React from 'react';
-import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 
 const CenteredButton = ({ children, handleShow }) => (
-	<Row className='d-flex justify-content-center'>
+	<Container className='d-flex justify-content-center'>
 		<Button
 			className='col-6 col-md-3 my-5 py-3 text-nowrap'
 			variant='success'
@@ -12,7 +12,7 @@ const CenteredButton = ({ children, handleShow }) => (
 		>
 			{children}
 		</Button>
-	</Row>
+	</Container>
 );
 
 export default CenteredButton;

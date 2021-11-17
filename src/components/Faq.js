@@ -21,7 +21,7 @@ const Faq = () => {
 		{ icon: faCreditCard, text: 'Credit and Debit Card' },
 		{ icon: faWallet, text: 'Account' },
 		{ icon: faShieldAlt, text: 'Digital Token' },
-		{ icon: faUserTie, text: 'Services and products' },
+		{ icon: faUserTie, text: 'Services and Products' },
 	];
 
 	const [index, setIndex] = useState(0);
@@ -31,22 +31,22 @@ const Faq = () => {
 	};
 
 	return (
-		<section className="faq text-light">
-			<Container className="py-5">
-				<Row className="justify-content-center">
-					<h2 className="my-5 faq__title text-center">FAQs</h2>
+		<section className='faq text-light'>
+			<Container className='py-5'>
+				<Row className='justify-content-center'>
+					<h2 className='mb-5 mt-2 faq__title text-center'>FAQs</h2>
 				</Row>
-				<Row className="d-flex align-items-center">
-					<Col className="d-lg-none mb-4 " xs={12}>
+				<Row className='d-flex align-items-center'>
+					<Col className='d-lg-none mb-3 ' xs={12}>
 						<Row>
 							{options.map(({ icon }, key) => (
 								<Col
-									className="d-flex justify-content-center"
+									className='d-flex justify-content-center'
 									key={key}
 								>
 									<FontAwesomeIcon
 										icon={icon}
-										size="2x"
+										size='2x'
 										color={key === index ? '#fff' : '#BBB'}
 										onClick={() => handleClick(key)}
 									/>
@@ -55,11 +55,13 @@ const Faq = () => {
 						</Row>
 
 						<Row className='mt-5'>
-							<p className='lead text-center'>{options[index].text}</p>
+							<p className='lead text-center'>
+								{options[index].text}
+							</p>
 						</Row>
 					</Col>
 
-					<Col className="d-none d-lg-block">
+					<Col className='d-none d-lg-block'>
 						{options.map(({ icon, text }, key) => (
 							<IconText
 								icon={icon}
@@ -76,12 +78,11 @@ const Faq = () => {
 					</Col>
 
 					<Col>
-						<Accordion
-							defaultActiveKey='0'
-							activeKey={`${index}`}
-						>
-							<Accordion.Item className="faq__item" eventKey='0'>
-								<Accordion.Header>Item #1</Accordion.Header>
+						<Accordion defaultActiveKey='0' activeKey={`${index}`}>
+							<Accordion.Item className='faq__item' eventKey='0'>
+								<Accordion.Header>
+									Credit and Debit Card
+								</Accordion.Header>
 								<Accordion.Body>
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
@@ -96,8 +97,8 @@ const Faq = () => {
 									mollit anim id est laborum.
 								</Accordion.Body>
 							</Accordion.Item>
-							<Accordion.Item className="faq__item" eventKey='1'>
-								<Accordion.Header>Item #2</Accordion.Header>
+							<Accordion.Item className='faq__item' eventKey='1'>
+								<Accordion.Header>Account</Accordion.Header>
 								<Accordion.Body>
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
@@ -112,8 +113,10 @@ const Faq = () => {
 									mollit anim id est laborum.
 								</Accordion.Body>
 							</Accordion.Item>
-							<Accordion.Item className="faq__item" eventKey='2'>
-								<Accordion.Header>Item #3</Accordion.Header>
+							<Accordion.Item className='faq__item' eventKey='2'>
+								<Accordion.Header>
+									Digital Token
+								</Accordion.Header>
 								<Accordion.Body>
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
@@ -128,8 +131,10 @@ const Faq = () => {
 									mollit anim id est laborum.
 								</Accordion.Body>
 							</Accordion.Item>
-							<Accordion.Item className="faq__item" eventKey='3'>
-								<Accordion.Header>Item #4</Accordion.Header>
+							<Accordion.Item className='faq__item' eventKey='3'>
+								<Accordion.Header>
+									Services and Products
+								</Accordion.Header>
 								<Accordion.Body>
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
