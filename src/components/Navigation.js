@@ -1,25 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Navigation.scss';
-import {
-	Navbar,
-	Nav,
-	ButtonGroup,
-	Button,
-	Container,
-	NavDropdown,
-} from 'react-bootstrap';
+import { Navbar, Nav, ButtonGroup, Button, Container, NavDropdown } from 'react-bootstrap';
 import logo from '../assets/logo.svg';
 
 const Navigation = ({ handleShow }) => (
 	<Navbar bg='light' expand='lg'>
 		<Container>
 			<Navbar.Brand href='#home'>
-				<img
-					src={logo}
-					height='40'
-					className='d-inline-block align-top'
-					alt='Steady logo'
-				/>
+				<Link to='/'>
+					<img src={logo} height='40' className='d-inline-block align-top' alt='Steady logo' />
+				</Link>
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls='basic-navbar-nav' />
 			<Navbar.Collapse id='basic-navbar-nav'>
@@ -31,22 +23,19 @@ const Navigation = ({ handleShow }) => (
 				<ButtonGroup aria-label='Basic example'>
 					<Button variant='outline-secondary'>
 						<NavDropdown title='Log in' id='basic-nav-dropdown'>
-							<NavDropdown.Item href='#action/3.1'>
-								Action
+							<NavDropdown.Item>
+								<Link to='/login'>Personal</Link>
 							</NavDropdown.Item>
-							<NavDropdown.Item href='#action/3.2'>
-								Another action
-							</NavDropdown.Item>
-							<NavDropdown.Item href='#action/3.3'>
-								Something
+							<NavDropdown.Item>
+								<Link to='/login'>Business</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Divider />
-							<NavDropdown.Item href='#action/3.4'>
-								Separated link
-							</NavDropdown.Item>
+							<NavDropdown.Item>Separated link</NavDropdown.Item>
 						</NavDropdown>
 					</Button>
-					<Button variant='outline-secondary' onClick={handleShow}>Open an account</Button>
+					<Button variant='outline-secondary' onClick={handleShow}>
+						Open an account
+					</Button>
 				</ButtonGroup>
 			</Navbar.Collapse>
 		</Container>

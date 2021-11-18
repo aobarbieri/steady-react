@@ -1,38 +1,30 @@
 import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
 import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import CreditCard from './components/CreditCard';
-import CardList from './components/CardList';
-import CenteredButton from './components/CenteredButton';
-import Institutional from './components/Institutional';
-import Faq from './components/Faq';
 import Footer from './components/Footer';
 import AccountModal from './components/AccountModal';
 
-import posts from './data/posts';
+import Home from './views/Home';
+import Login from './views/Login';
+
 import './App.scss';
 
 const App = () => {
 	const [show, setShow] = useState(false);
 
 	return (
-		<div className='App'>
+		<div>
 			<Navigation handleShow={() => setShow(true)} />
-			<Hero />
 
-			<CreditCard />
-			<CardList posts={posts} />
-			<CenteredButton handleShow={() => setShow(true)} >
-				Open an account
-			</CenteredButton>
+			<Routes>
+				<Route path='/' element={<Home handleClick={() => setShow(true)} />} />
 
-			<Institutional />
-			<Faq />
+				<Route path='/login' element={<Login />} />
+			</Routes>
+
 			<Footer />
-			<AccountModal
-				show={show}
-				handleClose={() => setShow(false)}
-			/>
+			<AccountModal show={show} handleClose={() => setShow(false)} />
 		</div>
 	);
 };
