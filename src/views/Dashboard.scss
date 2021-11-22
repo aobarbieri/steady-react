@@ -1,10 +1,9 @@
 @import '../variables';
 
 .dashboard {
-
-    @media screen and (min-width: 992px) {
-        min-height: calc(100vh - 11.74rem);
-    }
+	@media screen and (min-width: 992px) {
+		min-height: calc(100vh - 11.74rem);
+	}
 
 	&__user-avatar {
 		position: relative;
@@ -17,22 +16,22 @@
 		transform: translate(-50%, -95%);
 	}
 
-    &__btn {
-        color: $color-primary;
-        text-decoration: none;
+	&__btn {
+		color: $color-primary;
+		text-decoration: none;
 
-        &:hover {
-            background-color: $color-primary;
-            color: #fff;
-            text-decoration: none;
-        }
-    }
+		&:hover {
+			background-color: $color-primary;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
 
-    .nav-item .nav-link {
-        color: $color-primary;
-    }
+	.nav-item .nav-link {
+		color: $color-primary;
+	}
 
-    .nav-item .nav-link.active {
-        color: #5a5a5a;
-    }
+	.nav-item .nav-link.active {
+		color: #5a5a5a;
+	}
 }
