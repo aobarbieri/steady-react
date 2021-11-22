@@ -16,7 +16,9 @@ const Login = () => (
 			<Row>
 				<Col className='text-center'>
 					<Image src={logo} className='mb-5' height='90' />
+					
 					<Form>
+
 						<Form.Group className='mb-3' controlId='formBasicEmail'>
 							<Form.Label className='lead'>Username</Form.Label>
 							<Form.Control type='text' />
@@ -26,11 +28,13 @@ const Login = () => (
 							<Form.Label className='lead'>Password</Form.Label>
 							<Form.Control type='password' />
 						</Form.Group>
+
 						<Link to='/dashboard'>
 							<Button variant='primary' type='submit' className=''>
 								Submit
 							</Button>
 						</Link>
+
 					</Form>
 				</Col>
 			</Row>
