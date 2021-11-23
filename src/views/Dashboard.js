@@ -10,8 +10,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faUser } from '@fortawesome/free-solid-svg-icons';
 
 import AccountBalance from '../components/AccountBalance';
-// import AccountPayments from '../components/AccountPayments';
-// import AccountHistory from '../components/AccountHistory';
+import AccountPayments from '../components/AccountPayments';
+import AccountHistory from '../components/AccountHistory';
 
 import './Dashboard.scss';
 
@@ -40,6 +40,10 @@ const Dashboard = ({ className = false }) => {
 			{ date: '07/10', description: 'PAYMENT PLAN 051884', value: '-$599.98' },
 			{ date: '07/10', description: 'YOUTUBE SUBS 0516132', value: '-$11.99' },
 		],
+		history: [
+			'historico 1',
+			'historico 2'
+		]
 	};
 
 	return (
@@ -64,7 +68,7 @@ const Dashboard = ({ className = false }) => {
 						</Col>
 					</Row>
 
-					<Row className='mx-3 mx-lg-2'>
+					<Row className=''>
 						{links.map(({ text, path }, key) => (
 							<Link className='dashboard__link' to={path} key={key}>
 								<Button
@@ -82,9 +86,9 @@ const Dashboard = ({ className = false }) => {
 				</Col>
 
 				<Routes>
-					<Route path='/dashboard' element={<AccountBalance data={data} />} />
-					<Route path='/dashboard/payments' />
-					<Route path='/dashboard/history' />
+					<Route path='/1' element={<AccountBalance data={data} />} />
+					<Route path='/' element={<AccountPayments />} />
+					<Route path='/3' element={<AccountHistory data={data} />} />
 				</Routes>
 			</Row>
 		</Container>
