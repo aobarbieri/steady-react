@@ -13,6 +13,22 @@ import './App.scss';
 
 const App = () => {
 	const [show, setShow] = useState(false);
+	const [name, setName] = useState();
+	const [account, setAccount] = useState();
+	const isLogged = name && account;
+
+	const fakeAuth = {
+		login(name, cb) {
+			setName(name);
+			setAccount(account);
+			setTimeout(cb, 100);
+		},
+		logout(cb) {
+			setName();
+			setAccount();
+			setTimeout(cb, 100);
+		},
+	};
 
 	return (
 		<div>
@@ -20,8 +36,8 @@ const App = () => {
 
 			<Routes>
 				<Route path='/' element={<Home handleClick={() => setShow(true)} />} />
-				<Route path='/login' element={<Login />} />
-				<Route path='/dashboard' element={<Dashboard />} />
+				<Route path='/login' element={<Login auth={fakeAuth} />} />
+				<Route path='/dashboard' element={<Dashboard name={name} account={account} />} />
 			</Routes>
 
 			<Footer />

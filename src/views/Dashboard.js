@@ -15,7 +15,7 @@ import AccountHistory from '../components/AccountHistory';
 
 import './Dashboard.scss';
 
-const Dashboard = ({ className = false }) => {
+const Dashboard = ({ className = false, name, account }) => {
 	
 	const [ activeLink, setActiveLink ] = useState(0);
 	
@@ -63,8 +63,8 @@ const Dashboard = ({ className = false }) => {
 							</span>
 						</Col>
 						<Col xs={9}>
-							<h4>Angelica Cordeiro</h4>
-							<p className='text-muted'>bank: 1234 c/c: 4321-5</p>
+							<h4>{name}</h4>
+							<p className='text-muted'>{account}</p>
 						</Col>
 					</Row>
 
@@ -86,9 +86,9 @@ const Dashboard = ({ className = false }) => {
 				</Col>
 
 				<Routes>
-					<Route path='/1' element={<AccountBalance data={data} />} />
-					<Route path='/' element={<AccountPayments />} />
-					<Route path='/3' element={<AccountHistory data={data} />} />
+					<Route path='/' element={<AccountBalance data={data} />} />
+					<Route path='2' element={<AccountPayments />} />
+					<Route path='3' element={<AccountHistory data={data} />} />
 				</Routes>
 			</Row>
 		</Container>
